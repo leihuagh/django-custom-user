@@ -4,8 +4,11 @@ Base Template for dockerised django app with Custom User extend the Abstract Use
 
 ## Properties
 python version : 3.6.8
+
 django version : 2.0.9
+
 user model : extends Abstract user model extra field "life_motto" added on user model
+
 db : Django default = SQLite
 
 ## Getting started
