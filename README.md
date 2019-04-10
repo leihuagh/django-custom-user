@@ -1,6 +1,6 @@
 # django-custom-user
 
-Base Template for dockerised django app with Custom User extend the Abstract User. Clone the repo and use as the base for your project
+Base Template for dockerised django app with Custom User extending AbstractUser. Clone the repo and use as the base for your project
 
 ## Properties
 python version : 3.6.8
