@@ -45,6 +45,7 @@ class CustomUserChangeForm(forms.ModelForm):
             "username",
             "first_name",
             "last_name",
+            "life_motto",
             "password",
         )
 

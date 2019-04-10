@@ -16,6 +16,7 @@ class CustomUserAdmin(UserAdmin):
                     "email",
                     "password",
                     "username",
+                    "life_motto"
 
                 )
             },
