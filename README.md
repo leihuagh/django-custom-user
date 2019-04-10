@@ -1,6 +1,6 @@
 # django-custom-user
 
-Base Template for dockerised django app with Custom User extending AbstractUser. Clone the repo and use as the base for your project
+Base Template for dockerised django app with Custom User extending AbstractUser. Factory boy use for model Factories. Clone the repo and use as the base for your project
 
 ## Properties
 python version : 3.6.8
@@ -16,13 +16,21 @@ Clone repo and cd into directory
 
 ### Running app
 
+You will migrate and import the admin user to be able to access admin
 ```bash
 docker-compose build
 docker-compose run --rm web-app python manage.py migrate
+docker-compose run --rm web-app python manage.py import
 docker-compose up / docker-compose up -d
 ```
+Access the app at [http://localhost:8000](http://localhost:8000/)
 
 ### Running migrations 
+```bash
+docker-compose run --rm web-app python manage.py migrate
+```
+
+###Running tests
 ```bash
 docker-compose run --rm web-app python manage.py migrate
 ```
@@ -43,3 +51,6 @@ You will see that Author comes up as Mokgadi Rasekgala when you run the app. Cha
 ```shell
 docker-compose run -e AUTHOR=Lebo web-app
 ```
+
+## Making Modifications
+Feel free to delete the life_motto field was added so you see how to add a non required field to the admin. If you add a required field you must add it to the Create form add_fieldset in the admin.py

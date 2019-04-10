@@ -17,9 +17,6 @@ RUN pip3 install -r requirements.txt
 # Copy the current directory contents into the container at /music_service
 COPY . /code/
 
-#set environments to be used
-#set environments to be used
-ENV AUTHOR="Mokgadi Rasekgala"
 
 EXPOSE 8000
 
