@@ -18,6 +18,7 @@ Clone repo and cd into directory
 
 ```bash
 docker-compose build
+docker-compose run --rm web-app python manage.py migrate
 docker-compose up / docker-compose up -d
 ```
 
