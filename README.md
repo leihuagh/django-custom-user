@@ -21,9 +21,14 @@ You will migrate and import the admin user to be able to access admin
 docker-compose build
 docker-compose run --rm web-app python manage.py migrate
 docker-compose run --rm web-app python manage.py import
-docker-compose up / docker-compose up -d
+docker-compose up
 ```
 Access the app at [http://localhost:8000](http://localhost:8000/)
+Access the admin at [http://localhost:8000](http://localhost:8000/admin)
+
+Login using 
+  username : admin
+  password : adminadmin
 
 ### Running migrations 
 ```bash
