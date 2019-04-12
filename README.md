@@ -58,4 +58,4 @@ docker-compose run -e AUTHOR=Lebo web-app
 ```
 
 ## Making Modifications
-Feel free to delete the life_motto field was added so you see how to add a non required field to the admin. If you add a required field you must add it to the Create form add_fieldset in the admin.py
+Feel free to delete the life_motto field was added so you see how to add a required field to the admin and createsuperuser propt. If you add a non-required field you must add it to the Update form fieldset in the admin.py if you want to be able to edit it in the admin.
