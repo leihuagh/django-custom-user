@@ -34,28 +34,32 @@ Login using
 ```bash
 docker-compose run --rm web-app python manage.py migrate
 ```
-
-###Running tests
+### Making migrations 
 ```bash
-docker-compose run --rm web-app python manage.py migrate
+docker-compose run --rm web-app python manage.py makemigrations
+```
+
+### Running tests
+```bash
+docker-compose run --rm web-app python manage.py test
 ```
 
 ### Creating super user
 ```bash
-docker-compose run --rm web-app python manage.py migrate
+docker-compose run --rm web-app python manage.py createsuperuser
 ```
 
 ### Running shell 
 ```bash
 docker-compose up -d
-docker-compose run --rm web-app python manage.py migrate
+docker-compose run --rm web-app python manage.py shell
 ```
 
 ### changing Author
 You will see that Author comes up as Mokgadi Rasekgala when you run the app. Change it the docker-compose.yml file to your name  or by running
 ```shell
-docker-compose run -e AUTHOR=Lebo web-app
+docker-compose run -e AUTHOR={Your name} web-app
 ```
 
 ## Making Modifications
-Feel free to delete the life_motto field was added so you see how to add a required field to the admin and createsuperuser propt. If you add a non-required field you must add it to the Update form fieldset in the admin.py if you want to be able to edit it in the admin.
+Feel free to delete the life_motto field was added so you see how to add a required field to the admin and createsuperuser prompt. If you add a non-required field you must add it to the Update form fieldset in the admin.py if you want to be able to edit it in the admin.
